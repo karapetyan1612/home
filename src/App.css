@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head {
+  width: 1000px;
+  margin: auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.div1 {
+  display: flex;
+  flex-direction: row;
+}
+.input1 {
+  width: 50px;
+  height: 31px;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.input2 {
+  border: 0;
+  width: 70px;
+  height: 30px;
+  background-color: red;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+
+  text-align: center;
+}
+.input3 {
+  border: 0;
+  width: 70px;
+  height: 30px;
+  background-color: blue;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+.input4 {
+  border: 0;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(216, 167, 6);
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+.input5 {
+  border: 0;
+  width: 70px;
+  height: 30px;
+  background-color: green;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+.main {
+  margin-left: 20px;
+}
+.span1 {
+  font-size: 21px;
+}
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainhead {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+
+  /* margin-bottom: 220px; */
+}
+.value {
+  width: 1000px;
+  height: 370px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-left: -200px;
+}
+.imgplayer {
+  display: flex;
+  flex-direction: row;
+  height: 148px;
+  width: 100%;
+}
+.imgplayer div {
+  width: 248.8px;
+  border: 1px solid black;
+}
+.imgplayer img {
+  width: 248.8px;
+  height: 148px;
+  border: 0;
+}
+.valueplayer {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+.nameplayer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+.nameplayer input {
+  width: 245px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  border: 0;
+  border-right: 1px solid black;
+  border-color: black;
+}
+.name1 {
+  background-color: red;
+}
+.name2 {
+  background-color: blue;
+}
+.name3 {
+  background-color: rgb(216, 167, 6);
+}
+.name4 {
+  background-color: green;
+}
+.valueplayer div {
+  width: 249px;
+  height: 180px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 110px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.value1 {
+  background-color: red;
+}
+.value2 {
+  background-color: blue;
+}
+.value3 {
+  background-color: rgb(216, 167, 6);
+}
+.value4 {
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: 350px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 25px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: brown;
+  color: white;
+}
+.userValue {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.userValue .value {
+  margin: 0;
 }
