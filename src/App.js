@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import Main from "./components/main";
 import Value from "./components/value";
 import ValuesContext from "./contexts/valuesContext";
 import DataContext from "./contexts/dataContext";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 
 const colors = ["red", "blue", "orange", "green"];
 if (!localStorage.getItem("data")) {
@@ -58,11 +58,18 @@ function App() {
       alert("thanks");
     }
   };
+  // const openInNewTab = (url) => {
+
+  // };
+  // const openInNewTab = useCallback((url) => {
+  //   window.open(url, "_blank", "noreferrer");
+  // }, []);
   return (
     <DataContext.Provider value={data}>
       <ValuesContext.Provider value={value}>
         <Routes>
           <Route
+            exact
             path="/"
             element={
               <div className="head">
@@ -71,6 +78,13 @@ function App() {
                   <Main value="20" index="Topic 2"></Main>
                   <Main value="30" index="Topic 3"></Main>
                 </div>
+                <Link to="/user" target="_blank">
+                  <img
+                    src="https://cdn1.iconfinder.com/data/icons/business-flat-16/64/e-commerce-10-256.png"
+                    className="Open"
+                  ></img>
+                </Link>
+
                 <button className="button" onClick={clickHandler}>
                   Clear
                 </button>
